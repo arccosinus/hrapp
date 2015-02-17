@@ -1,0 +1,12 @@
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\obj\Debug\HRApp.Data.csprojResolveAssemblyReference.cache
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\HRApp.Data.dll.config
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\HRApp.Data.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\HRApp.Data.pdb
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\EntityFramework.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\HRApp.Model.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\HRApp.Model.pdb
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\EntityFramework.xml
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\obj\Debug\HRApp.Data.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\HRApp.Data\obj\Debug\HRApp.Data.pdb

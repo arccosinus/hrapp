@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HumanResourcesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MName" Type="varchar" MaxLength="20" />
+    <Property Name="LName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Suffix" Type="varchar" MaxLength="20" />
+    <Property Name="AlternateGoesBy" Type="bit" />
+    <Property Name="FamiliarFName" Type="varchar" MaxLength="20" />
+    <Property Name="FamiliarLName" Type="varchar" MaxLength="20" />
+    <Property Name="Address1" Type="varchar" MaxLength="50" />
+    <Property Name="Address2" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="20" />
+    <Property Name="State" Type="varchar" MaxLength="2" />
+    <Property Name="Zip" Type="varchar" MaxLength="15" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Cell" Type="varchar" MaxLength="20" />
+    <Property Name="SSN" Type="varchar" MaxLength="15" />
+    <Property Name="DOB" Type="datetime" />
+    <Property Name="Administrative" Type="bit" />
+    <Property Name="EmergencyName" Type="varchar" MaxLength="50" />
+    <Property Name="EmergencyRelation" Type="varchar" MaxLength="50" />
+    <Property Name="EmergencyPhone" Type="varchar" MaxLength="20" />
+    <Property Name="Allergies" Type="varchar" MaxLength="250" />
+    <Property Name="Gender" Type="char" MaxLength="2" />
+    <Property Name="PositionTypeID" Type="int" />
+    <Property Name="Technical" Type="bit" />
+    <Property Name="Certificate" Type="varchar" MaxLength="75" />
+    <Property Name="Associates" Type="bit" />
+    <Property Name="ADegree" Type="varchar" MaxLength="75" />
+    <Property Name="Bachelors" Type="bit" />
+    <Property Name="BDegree" Type="varchar" MaxLength="75" />
+    <Property Name="Masters" Type="bit" />
+    <Property Name="MDegree" Type="varchar" MaxLength="75" />
+    <Property Name="Doctorate" Type="bit" />
+    <Property Name="DDegree" Type="varchar" MaxLength="75" />
+    <Property Name="Specialist" Type="bit" />
+    <Property Name="SDegree" Type="varchar" MaxLength="75" />
+    <Property Name="Military" Type="bit" />
+    <Property Name="Branch" Type="varchar" MaxLength="75" />
+    <Property Name="OtherEd" Type="varchar" MaxLength="100" />
+    <Property Name="HealthID" Type="int" />
+    <Property Name="HPersonType" Type="varchar" MaxLength="20" />
+    <Property Name="HCoveredName" Type="varchar" MaxLength="50" />
+    <Property Name="HRemoved" Type="bit" />
+    <Property Name="HDateStart" Type="datetime" />
+    <Property Name="HDateRemoved" Type="datetime" />
+    <Property Name="DentalID" Type="int" />
+    <Property Name="DPersonType" Type="varchar" MaxLength="20" />
+    <Property Name="DCoveredName" Type="varchar" MaxLength="50" />
+    <Property Name="DRemoved" Type="bit" />
+    <Property Name="DDateStart" Type="datetime" />
+    <Property Name="DDateRemoved" Type="datetime" />
+    <Property Name="LifeI" Type="bit" />
+    <Property Name="SuppLife" Type="bit" />
+    <Property Name="DisibilityDateEligable" Type="datetime" />
+    <Property Name="ADandD" Type="bit" />
+    <Property Name="ADDEmployeeSpouse" Type="bit" />
+    <Property Name="ADDEmployeeChild" Type="bit" />
+    <Property Name="AddFamily" Type="bit" />
+    <Property Name="RetirementEligDate" Type="datetime" />
+    <Property Name="RetirementContribution" Type="varchar" MaxLength="20" />
+    <Property Name="RetirementMax" Type="bit" />
+    <Property Name="RetirementCatchUp" Type="bit" />
+    <Property Name="SRA" Type="varchar" MaxLength="10" />
+    <Property Name="SRAChange" Type="bit" />
+    <Property Name="SRAChangeDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="50" />
+    <Property Name="CurrentEmployee" Type="bit" />
+    <Property Name="Retired" Type="bit" />
+    <Property Name="DateRetired" Type="datetime" />
+    <Property Name="COBRA" Type="bit" />
+    <Property Name="COBRAEligableTo" Type="datetime" />
+    <Property Name="HealthTerminationDate" Type="datetime" />
+    <Property Name="Terminated" Type="bit" />
+    <Property Name="Resigned" Type="bit" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="LastDate" Type="datetime" />
+    <Property Name="ReasonForLeaving" Type="varchar" MaxLength="100" />
+    <Property Name="LastSupervisor" Type="varchar" MaxLength="50" />
+    <Property Name="Notes" Type="text" />
+    <Property Name="Room" Type="varchar" MaxLength="10" />
+    <Property Name="Extension" Type="varchar" MaxLength="13" />
+    <Property Name="HomeOfficePhone" Type="varchar" MaxLength="20" />
+    <Property Name="HomeOfficeFax" Type="varchar" MaxLength="20" />
+    <Property Name="FullTime" Type="bit" />
+    <Property Name="PartTime" Type="bit" />
+    <Property Name="OffSite" Type="bit" />
+    <Property Name="CreditCard" Type="bit" />
+    <Property Name="CallingCard" Type="bit" />
+    <Property Name="Computer" Type="bit" />
+    <Property Name="PrinterFax" Type="bit" />
+    <Property Name="StartAnnual" Type="datetime" />
+    <Property Name="StartSick" Type="datetime" />
+    <Property Name="StartPetty" Type="datetime" />
+    <Property Name="Spouse" Type="varchar" MaxLength="50" />
+    <Property Name="Dependents" Type="varchar" MaxLength="50" />
+    <Property Name="CollectDisability" Type="bit" />
+    <Property Name="DisibilityStartDate" Type="datetime" />
+    <Property Name="InsuranceNote" Type="text" />
+    <Property Name="LengthOfService" Type="varchar" MaxLength="25" />
+    <Property Name="LOSUpdate" Type="datetime" />
+    <Property Name="NinetyDayReviewDate" Type="datetime" />
+    <Property Name="NinetyDayReview" Type="bit" />
+    <Property Name="Photofile" Type="varchar" MaxLength="50" />
+    <Property Name="Traveling" Type="bit" />
+    <Property Name="StaffADandDamount" Type="varchar" MaxLength="10" />
+    <Property Name="FifteenMonthDate" Type="datetime" />
+    <Property Name="FiveYearDate" Type="datetime" />
+    <Property Name="ThisYearAnnualLeave" Type="real" />
+    <Property Name="SickLeave" Type="real" />
+    <Property Name="PettyLeave" Type="real" />
+    <Property Name="StartMonthDate" Type="datetime" />
+    <Property Name="RemainingAnnual" Type="real" />
+    <Property Name="RemainingSick" Type="real" />
+    <Property Name="RemainingPetty" Type="real" />
+    <Property Name="OldSickLeave" Type="real" />
+    <Property Name="FunctionalArea" Type="varchar" MaxLength="25" />
+    <Property Name="WorkEmail" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Function Name="dt_verstamp007" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="s_FormerUsers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="HumanResourcesModelStoreContainer">
+    <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

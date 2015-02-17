@@ -1,0 +1,5 @@
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\ClassLibrary1\bin\Debug\HRApp.Model.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\ClassLibrary1\bin\Debug\HRApp.Model.pdb
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\ClassLibrary1\obj\Debug\HRApp.Model.csprojResolveAssemblyReference.cache
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\ClassLibrary1\obj\Debug\HRApp.Model.dll
+C:\Users\arccosinus\Documents\Visual Studio 2013\Projects\HRApp\ClassLibrary1\obj\Debug\HRApp.Model.pdb

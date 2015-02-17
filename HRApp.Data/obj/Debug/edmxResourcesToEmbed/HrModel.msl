@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HumanResourcesModelStoreContainer" CdmEntityContainer="HumanResourcesEntities">
+    <FunctionImportMapping FunctionImportName="dt_verstamp007" FunctionName="HumanResourcesModel.Store.dt_verstamp007" />
+    <FunctionImportMapping FunctionImportName="s_FormerUsers" FunctionName="HumanResourcesModel.Store.s_FormerUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HumanResourcesModel.s_FormerUsers_Result">
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="lname" ColumnName="lname" />
+          <ScalarProperty Name="lastdate" ColumnName="lastdate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="HumanResourcesModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="WorkEmail" ColumnName="WorkEmail" />
+          <ScalarProperty Name="FunctionalArea" ColumnName="FunctionalArea" />
+          <ScalarProperty Name="OldSickLeave" ColumnName="OldSickLeave" />
+          <ScalarProperty Name="RemainingPetty" ColumnName="RemainingPetty" />
+          <ScalarProperty Name="RemainingSick" ColumnName="RemainingSick" />
+          <ScalarProperty Name="RemainingAnnual" ColumnName="RemainingAnnual" />
+          <ScalarProperty Name="StartMonthDate" ColumnName="StartMonthDate" />
+          <ScalarProperty Name="PettyLeave" ColumnName="PettyLeave" />
+          <ScalarProperty Name="SickLeave" ColumnName="SickLeave" />
+          <ScalarProperty Name="ThisYearAnnualLeave" ColumnName="ThisYearAnnualLeave" />
+          <ScalarProperty Name="FiveYearDate" ColumnName="FiveYearDate" />
+          <ScalarProperty Name="FifteenMonthDate" ColumnName="FifteenMonthDate" />
+          <ScalarProperty Name="StaffADandDamount" ColumnName="StaffADandDamount" />
+          <ScalarProperty Name="Traveling" ColumnName="Traveling" />
+          <ScalarProperty Name="Photofile" ColumnName="Photofile" />
+          <ScalarProperty Name="NinetyDayReview" ColumnName="NinetyDayReview" />
+          <ScalarProperty Name="NinetyDayReviewDate" ColumnName="NinetyDayReviewDate" />
+          <ScalarProperty Name="LOSUpdate" ColumnName="LOSUpdate" />
+          <ScalarProperty Name="LengthOfService" ColumnName="LengthOfService" />
+          <ScalarProperty Name="InsuranceNote" ColumnName="InsuranceNote" />
+          <ScalarProperty Name="DisibilityStartDate" ColumnName="DisibilityStartDate" />
+          <ScalarProperty Name="CollectDisability" ColumnName="CollectDisability" />
+          <ScalarProperty Name="Dependents" ColumnName="Dependents" />
+          <ScalarProperty Name="Spouse" ColumnName="Spouse" />
+          <ScalarProperty Name="StartPetty" ColumnName="StartPetty" />
+          <ScalarProperty Name="StartSick" ColumnName="StartSick" />
+          <ScalarProperty Name="StartAnnual" ColumnName="StartAnnual" />
+          <ScalarProperty Name="PrinterFax" ColumnName="PrinterFax" />
+          <ScalarProperty Name="Computer" ColumnName="Computer" />
+          <ScalarProperty Name="CallingCard" ColumnName="CallingCard" />
+          <ScalarProperty Name="CreditCard" ColumnName="CreditCard" />
+          <ScalarProperty Name="OffSite" ColumnName="OffSite" />
+          <ScalarProperty Name="PartTime" ColumnName="PartTime" />
+          <ScalarProperty Name="FullTime" ColumnName="FullTime" />
+          <ScalarProperty Name="HomeOfficeFax" ColumnName="HomeOfficeFax" />
+          <ScalarProperty Name="HomeOfficePhone" ColumnName="HomeOfficePhone" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="Room" ColumnName="Room" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="LastSupervisor" ColumnName="LastSupervisor" />
+          <ScalarProperty Name="ReasonForLeaving" ColumnName="ReasonForLeaving" />
+          <ScalarProperty Name="LastDate" ColumnName="LastDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Resigned" ColumnName="Resigned" />
+          <ScalarProperty Name="Terminated" ColumnName="Terminated" />
+          <ScalarProperty Name="HealthTerminationDate" ColumnName="HealthTerminationDate" />
+          <ScalarProperty Name="COBRAEligableTo" ColumnName="COBRAEligableTo" />
+          <ScalarProperty Name="COBRA" ColumnName="COBRA" />
+          <ScalarProperty Name="DateRetired" ColumnName="DateRetired" />
+          <ScalarProperty Name="Retired" ColumnName="Retired" />
+          <ScalarProperty Name="CurrentEmployee" ColumnName="CurrentEmployee" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SRAChangeDate" ColumnName="SRAChangeDate" />
+          <ScalarProperty Name="SRAChange" ColumnName="SRAChange" />
+          <ScalarProperty Name="SRA" ColumnName="SRA" />
+          <ScalarProperty Name="RetirementCatchUp" ColumnName="RetirementCatchUp" />
+          <ScalarProperty Name="RetirementMax" ColumnName="RetirementMax" />
+          <ScalarProperty Name="RetirementContribution" ColumnName="RetirementContribution" />
+          <ScalarProperty Name="RetirementEligDate" ColumnName="RetirementEligDate" />
+          <ScalarProperty Name="AddFamily" ColumnName="AddFamily" />
+          <ScalarProperty Name="ADDEmployeeChild" ColumnName="ADDEmployeeChild" />
+          <ScalarProperty Name="ADDEmployeeSpouse" ColumnName="ADDEmployeeSpouse" />
+          <ScalarProperty Name="ADandD" ColumnName="ADandD" />
+          <ScalarProperty Name="DisibilityDateEligable" ColumnName="DisibilityDateEligable" />
+          <ScalarProperty Name="SuppLife" ColumnName="SuppLife" />
+          <ScalarProperty Name="LifeI" ColumnName="LifeI" />
+          <ScalarProperty Name="DDateRemoved" ColumnName="DDateRemoved" />
+          <ScalarProperty Name="DDateStart" ColumnName="DDateStart" />
+          <ScalarProperty Name="DRemoved" ColumnName="DRemoved" />
+          <ScalarProperty Name="DCoveredName" ColumnName="DCoveredName" />
+          <ScalarProperty Name="DPersonType" ColumnName="DPersonType" />
+          <ScalarProperty Name="DentalID" ColumnName="DentalID" />
+          <ScalarProperty Name="HDateRemoved" ColumnName="HDateRemoved" />
+          <ScalarProperty Name="HDateStart" ColumnName="HDateStart" />
+          <ScalarProperty Name="HRemoved" ColumnName="HRemoved" />
+          <ScalarProperty Name="HCoveredName" ColumnName="HCoveredName" />
+          <ScalarProperty Name="HPersonType" ColumnName="HPersonType" />
+          <ScalarProperty Name="HealthID" ColumnName="HealthID" />
+          <ScalarProperty Name="OtherEd" ColumnName="OtherEd" />
+          <ScalarProperty Name="Branch" ColumnName="Branch" />
+          <ScalarProperty Name="Military" ColumnName="Military" />
+          <ScalarProperty Name="SDegree" ColumnName="SDegree" />
+          <ScalarProperty Name="Specialist" ColumnName="Specialist" />
+          <ScalarProperty Name="DDegree" ColumnName="DDegree" />
+          <ScalarProperty Name="Doctorate" ColumnName="Doctorate" />
+          <ScalarProperty Name="MDegree" ColumnName="MDegree" />
+          <ScalarProperty Name="Masters" ColumnName="Masters" />
+          <ScalarProperty Name="BDegree" ColumnName="BDegree" />
+          <ScalarProperty Name="Bachelors" ColumnName="Bachelors" />
+          <ScalarProperty Name="ADegree" ColumnName="ADegree" />
+          <ScalarProperty Name="Associates" ColumnName="Associates" />
+          <ScalarProperty Name="Certificate" ColumnName="Certificate" />
+          <ScalarProperty Name="Technical" ColumnName="Technical" />
+          <ScalarProperty Name="PositionTypeID" ColumnName="PositionTypeID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Allergies" ColumnName="Allergies" />
+          <ScalarProperty Name="EmergencyPhone" ColumnName="EmergencyPhone" />
+          <ScalarProperty Name="EmergencyRelation" ColumnName="EmergencyRelation" />
+          <ScalarProperty Name="EmergencyName" ColumnName="EmergencyName" />
+          <ScalarProperty Name="Administrative" ColumnName="Administrative" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="SSN" ColumnName="SSN" />
+          <ScalarProperty Name="Cell" ColumnName="Cell" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="FamiliarLName" ColumnName="FamiliarLName" />
+          <ScalarProperty Name="FamiliarFName" ColumnName="FamiliarFName" />
+          <ScalarProperty Name="AlternateGoesBy" ColumnName="AlternateGoesBy" />
+          <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="MName" ColumnName="MName" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="StaffID" ColumnName="StaffID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="HRApp.Views.Employee"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1200
+             ">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="111" Margin="277,65,0,0" VerticalAlignment="Top" Width="258"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="34,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="EmployeeId" HorizontalAlignment="Left" Margin="83,47,0,0" VerticalAlignment="Top"/>
+        <Label Content="First" HorizontalAlignment="Left" Margin="34,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Middle" HorizontalAlignment="Left" Margin="34,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last" HorizontalAlignment="Left" Margin="35,156,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sufix" HorizontalAlignment="Left" Margin="35,182,0,0" VerticalAlignment="Top"/>
+        <Label Content="Address 1" HorizontalAlignment="Left" Margin="35,208,0,0" VerticalAlignment="Top"/>
+        <Label Content="Address 2" HorizontalAlignment="Left" Margin="34,234,0,0" VerticalAlignment="Top"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="35,260,0,0" VerticalAlignment="Top"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="35,286,0,0" VerticalAlignment="Top"/>
+        <Label Content="Zip" HorizontalAlignment="Left" Margin="185,287,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="34,312,0,0" VerticalAlignment="Top"/>
+        <Label Content="SSN" HorizontalAlignment="Left" Margin="35,338,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gender" HorizontalAlignment="Left" Margin="35,364,0,0" VerticalAlignment="Top"/>
+        <Label Content="Spouse" HorizontalAlignment="Left" Margin="35,390,0,0" VerticalAlignment="Top"/>
+        <Label Content="Dependents" HorizontalAlignment="Left" Margin="35,416,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,232,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="281"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="108,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="72"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="217,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="108,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Cell" HorizontalAlignment="Left" Margin="245,315,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="277,317,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="108,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="DOB" HorizontalAlignment="Left" Margin="245,341,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="277,344,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114"/>
+        <ComboBox HorizontalAlignment="Left" Margin="109,368,0,0" VerticalAlignment="Top" Width="71"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="109,419,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222"/>
+        <CheckBox  FlowDirection="RightToLeft" Content="Goes by &quot;Know As&quot; Name" HorizontalAlignment="Left" Height="22" Margin="302,79,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label Content="&quot;Know As&quot; First" HorizontalAlignment="Left" Margin="301,106,0,0" VerticalAlignment="Top"/>
+        <Label Content="&quot;Know As&quot; Last" HorizontalAlignment="Left" Margin="301,130,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="396,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="396,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Current Position Type" HorizontalAlignment="Left" Margin="577,62,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="706,65,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox  FlowDirection="RightToLeft" Content="Full Time" HorizontalAlignment="Left" Height="22" Margin="577,104,0,0" VerticalAlignment="Top" Width="67"/>
+        <CheckBox  FlowDirection="RightToLeft" Content="Part Time" HorizontalAlignment="Left" Height="22" Margin="654,104,0,0" VerticalAlignment="Top" Width="74"/>
+        <CheckBox  FlowDirection="RightToLeft" Content="Administrative" HorizontalAlignment="Left" Height="22" Margin="747,104,0,0" VerticalAlignment="Top" Width="97"/>
+        <CheckBox  FlowDirection="RightToLeft" Content="Off-Site" HorizontalAlignment="Left" Height="22" Margin="583,130,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.612,0.227"/>
+        <CheckBox  FlowDirection="RightToLeft" Content="Traveling" HorizontalAlignment="Left" Height="22" Margin="577,160,0,0" VerticalAlignment="Top" Width="80"/>
+        <DatePicker HorizontalAlignment="Left" Margin="645,181,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="645,210,0,0" VerticalAlignment="Top"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="577,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="End Date" HorizontalAlignment="Left" Margin="577,209,0,0" VerticalAlignment="Top"/>
+        <Label Content="Function Area" HorizontalAlignment="Left" Margin="583,247,0,0" VerticalAlignment="Top"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="583,273,0,0" VerticalAlignment="Top"/>
+        <Label Content="Reason For Leaaving" HorizontalAlignment="Left" Margin="582,313,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Supervisor" HorizontalAlignment="Left" Margin="582,344,0,0" VerticalAlignment="Top"/>
+        <Label Content="Room" HorizontalAlignment="Left" Margin="587,380,0,0" VerticalAlignment="Top"/>
+        <Label Content="Extension" HorizontalAlignment="Left" Margin="587,406,0,0" VerticalAlignment="Top"/>
+        <Label Content="Home Office Phone" HorizontalAlignment="Left" Margin="587,432,0,0" VerticalAlignment="Top"/>
+        <Label Content="Home Office Fax" HorizontalAlignment="Left" Margin="587,463,0,0" VerticalAlignment="Top"/>
+        <Label Content="Work Email" HorizontalAlignment="Left" Margin="587,494,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,344,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,383,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,411,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,467,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="706,494,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="180" Margin="55,458,0,0" VerticalAlignment="Top" Width="325">
+            <Label Content="Emergency Information" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,-1,0,0" FontSize="24" FontWeight="Bold"/>
+
+        </Border>
+        <Label Content="Emergency Contact" HorizontalAlignment="Left" Margin="86,510,0,0" VerticalAlignment="Top"/>
+        <Label Content="Relation" HorizontalAlignment="Left" Margin="86,536,0,0" VerticalAlignment="Top"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="86,562,0,0" VerticalAlignment="Top"/>
+        <Label Content="Allergies" HorizontalAlignment="Left" Margin="86,588,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="217,510,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="217,536,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="217,564,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="217,592,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="683,251,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="683,278,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Quick Notes" HorizontalAlignment="Left" Margin="55,649,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="84" Margin="132,653,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="596"  AcceptsReturn="True"/>
+        <Label Content="90 Day Review" HorizontalAlignment="Left" Margin="132,752,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="224,752,0,0" VerticalAlignment="Top" Width="156"/>
+        <CheckBox Content="Compleated" HorizontalAlignment="Left" Margin="441,752,0,0" VerticalAlignment="Top" FlowDirection="RightToLeft"/>
+
+
+    </Grid>
+</UserControl>

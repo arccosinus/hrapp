@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HumanResourcesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="HumanResourcesEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="dt_verstamp007" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="s_FormerUsers" ReturnType="Collection(HumanResourcesModel.s_FormerUsers_Result)" />
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(HumanResourcesModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(HumanResourcesModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="Staffs" EntityType="HumanResourcesModel.Staff" />
+  </EntityContainer>
+  <ComplexType Name="s_FormerUsers_Result">
+    <Property Type="String" Name="fname" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="lname" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="lastdate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Suffix" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AlternateGoesBy" Type="Boolean" />
+    <Property Name="FamiliarFName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FamiliarLName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Address1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="Zip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cell" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SSN" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Administrative" Type="Boolean" />
+    <Property Name="EmergencyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyRelation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmergencyPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Allergies" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="PositionTypeID" Type="Int32" />
+    <Property Name="Technical" Type="Boolean" />
+    <Property Name="Certificate" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Associates" Type="Boolean" />
+    <Property Name="ADegree" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Bachelors" Type="Boolean" />
+    <Property Name="BDegree" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Masters" Type="Boolean" />
+    <Property Name="MDegree" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Doctorate" Type="Boolean" />
+    <Property Name="DDegree" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Specialist" Type="Boolean" />
+    <Property Name="SDegree" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Military" Type="Boolean" />
+    <Property Name="Branch" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="OtherEd" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HealthID" Type="Int32" />
+    <Property Name="HPersonType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="HCoveredName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HRemoved" Type="Boolean" />
+    <Property Name="HDateStart" Type="DateTime" Precision="3" />
+    <Property Name="HDateRemoved" Type="DateTime" Precision="3" />
+    <Property Name="DentalID" Type="Int32" />
+    <Property Name="DPersonType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DCoveredName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DRemoved" Type="Boolean" />
+    <Property Name="DDateStart" Type="DateTime" Precision="3" />
+    <Property Name="DDateRemoved" Type="DateTime" Precision="3" />
+    <Property Name="LifeI" Type="Boolean" />
+    <Property Name="SuppLife" Type="Boolean" />
+    <Property Name="DisibilityDateEligable" Type="DateTime" Precision="3" />
+    <Property Name="ADandD" Type="Boolean" />
+    <Property Name="ADDEmployeeSpouse" Type="Boolean" />
+    <Property Name="ADDEmployeeChild" Type="Boolean" />
+    <Property Name="AddFamily" Type="Boolean" />
+    <Property Name="RetirementEligDate" Type="DateTime" Precision="3" />
+    <Property Name="RetirementContribution" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="RetirementMax" Type="Boolean" />
+    <Property Name="RetirementCatchUp" Type="Boolean" />
+    <Property Name="SRA" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SRAChange" Type="Boolean" />
+    <Property Name="SRAChangeDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CurrentEmployee" Type="Boolean" />
+    <Property Name="Retired" Type="Boolean" />
+    <Property Name="DateRetired" Type="DateTime" Precision="3" />
+    <Property Name="COBRA" Type="Boolean" />
+    <Property Name="COBRAEligableTo" Type="DateTime" Precision="3" />
+    <Property Name="HealthTerminationDate" Type="DateTime" Precision="3" />
+    <Property Name="Terminated" Type="Boolean" />
+    <Property Name="Resigned" Type="Boolean" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="LastDate" Type="DateTime" Precision="3" />
+    <Property Name="ReasonForLeaving" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LastSupervisor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Room" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Extension" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="HomeOfficePhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="HomeOfficeFax" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FullTime" Type="Boolean" />
+    <Property Name="PartTime" Type="Boolean" />
+    <Property Name="OffSite" Type="Boolean" />
+    <Property Name="CreditCard" Type="Boolean" />
+    <Property Name="CallingCard" Type="Boolean" />
+    <Property Name="Computer" Type="Boolean" />
+    <Property Name="PrinterFax" Type="Boolean" />
+    <Property Name="StartAnnual" Type="DateTime" Precision="3" />
+    <Property Name="StartSick" Type="DateTime" Precision="3" />
+    <Property Name="StartPetty" Type="DateTime" Precision="3" />
+    <Property Name="Spouse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dependents" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CollectDisability" Type="Boolean" />
+    <Property Name="DisibilityStartDate" Type="DateTime" Precision="3" />
+    <Property Name="InsuranceNote" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LengthOfService" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="LOSUpdate" Type="DateTime" Precision="3" />
+    <Property Name="NinetyDayReviewDate" Type="DateTime" Precision="3" />
+    <Property Name="NinetyDayReview" Type="Boolean" />
+    <Property Name="Photofile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Traveling" Type="Boolean" />
+    <Property Name="StaffADandDamount" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="FifteenMonthDate" Type="DateTime" Precision="3" />
+    <Property Name="FiveYearDate" Type="DateTime" Precision="3" />
+    <Property Name="ThisYearAnnualLeave" Type="Single" />
+    <Property Name="SickLeave" Type="Single" />
+    <Property Name="PettyLeave" Type="Single" />
+    <Property Name="StartMonthDate" Type="DateTime" Precision="3" />
+    <Property Name="RemainingAnnual" Type="Single" />
+    <Property Name="RemainingSick" Type="Single" />
+    <Property Name="RemainingPetty" Type="Single" />
+    <Property Name="OldSickLeave" Type="Single" />
+    <Property Name="FunctionalArea" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="WorkEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>
